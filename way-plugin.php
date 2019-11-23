@@ -20,7 +20,7 @@
  * License URI:  https://www.gnu.org/licenses/gpl.txt
  * Text Domain:  way-plugin
  * Domain Path:  /languages
- * Tested up to: 5.0.0
+ * Tested up to: 5.2.2
  */
 
 // If this file is called directly, abort.
@@ -432,14 +432,6 @@ function way_settings_links( $links, $file ) {
 				'<a href="%1s" class="' . WAY_ADMIN_SLUG . '-scripts-link">%2s</a>',
 				admin_url( 'options-general.php?page=' . WAY_ADMIN_SLUG . '-scripts' ),
 				esc_attr( 'Script Options', 'way-plugin' )
-			);
-
-			// Add a placeholder for an upgrade link.
-			$links[] = sprintf(
-				'<a href="%1s" title="%2s" class="' . WAY_ADMIN_SLUG . '-upgrade-link" style="color: #888; cursor: default;">%3s</a>',
-				''/* Add upgrade URL here */,
-				__( 'Upgrade not available', 'way-plugin' ),
-				esc_attr( 'Upgrade', 'way-plugin' )
 			);
 
 		}
